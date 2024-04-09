@@ -1,0 +1,67 @@
+.gantt-chart {
+  display: flex;
+  font-family: Arial, sans-serif;
+  border: 1px solid black;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.column.left {
+  border-right: 1px solid #ccc;
+}
+
+.header {
+  padding: 5px;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.cell {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+/* 
+.stall-line {
+  position: relative;
+} */
+
+.entry {
+  position: absolute;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.entry:hover {
+  background-color: #0056b3;
+}
+
+.time-scale {
+  display: flex;
+}
+
+.hour {
+  padding: 5px;
+  padding: 5px 160px 5px 160px;
+  border-bottom: 1px solid #ccc;
+  font-size: 12px;
+  text-align: right;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  pointer-events: none; /* To prevent the tooltip from blocking mouse events */
+}
